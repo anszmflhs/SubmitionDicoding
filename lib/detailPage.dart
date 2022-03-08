@@ -75,7 +75,7 @@ class _DetailPageState extends State<DetailPage> {
                       ),
                     ),
                     SizedBox(height: 10,),
-                    Text("Description:", style: TextStyle(
+                    Text("Deskripsi:", style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,
                       fontWeight: FontWeight.w900,),
@@ -91,7 +91,7 @@ class _DetailPageState extends State<DetailPage> {
                       Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
-                        Text("Price",style: TextStyle(
+                        Text("Harga",style: TextStyle(
                           color: Colors.grey[500],
                           fontSize: 16,
                           fontWeight: FontWeight.w600
@@ -110,7 +110,7 @@ class _DetailPageState extends State<DetailPage> {
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
                         color: Colors.orange[800],
                         padding: EdgeInsets.fromLTRB(35, 15, 35, 15),
-                        child: Text("Add To Cart",style: TextStyle(
+                        child: Text("Beli Sekarang",style: TextStyle(
                           color: Colors.white,fontSize: 18
                         ),),
                       )
@@ -127,7 +127,7 @@ class _DetailPageState extends State<DetailPage> {
                     Navigator.pop(context);
                   },
                   child: Container(
-                    margin: EdgeInsets.all(8),
+                    margin: EdgeInsets.only(top: 15,left: 15),
                     child: Icon(Icons.keyboard_backspace,
                     size: 42,
                     color: Colors.white,
@@ -136,8 +136,8 @@ class _DetailPageState extends State<DetailPage> {
                 ),
               // ),
               Positioned(
-                right: 30,
-                top: height * 0.45,
+                right: 10,
+                // top: height * 0.45,
                 child: GestureDetector(
                   onTap: (){
                     setState(() {
@@ -148,16 +148,17 @@ class _DetailPageState extends State<DetailPage> {
                     height: 70,
                     width: 70,
                     decoration: BoxDecoration(
-                      color: Colors.white,
+                      // color: Colors.white,
                       borderRadius: BorderRadius.circular(35),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.black.withOpacity(0.5),
-                            blurRadius: 0.5,
-                            spreadRadius: 0.1)
-                        ]),
+                        // boxShadow: [
+                        //   BoxShadow(
+                        //     color: Colors.black.withOpacity(0.5),
+                        //     blurRadius: 0.5,
+                        //     spreadRadius: 0.1)
+                        // ]
+                    ),
                     child: Icon(Icons.favorite, size: 45,
-                    color: (_like) ? Colors.red : Colors.grey[600],
+                    color: (_like) ? Colors.red : Colors.white,
                     ),
                   ),
                 ),

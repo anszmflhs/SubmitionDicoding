@@ -85,14 +85,14 @@ class MenuItemCard extends StatelessWidget {
               SizedBox(
                 width: 25,
               ),
-              IconButton(
-                icon: Icon(
-                  Icons.add_circle,
-                  color: Colors.brown[600],
-                  size: 36,
-                ),
-                onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => DetailPage(index: index)));},
-              )
+              // IconButton(
+              //   icon: Icon(
+              //     Icons.add_circle,
+              //     color: Colors.brown[600],
+              //     size: 36,
+              //   ),
+              //   onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) => DetailPage(index: index)));},
+              // )
             ],
           ),
         ),

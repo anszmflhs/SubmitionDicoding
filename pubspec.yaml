@@ -68,6 +68,9 @@ flutter:
     - images/sopbening.jpg
     - images/telurbalado.jpg
     - images/telurrebus.jpg
+    - images/telurrebuss.jpg
+    - images/sateususs.jpg
+    - images/atiampelas.jpg
 
   # To add assets to your application, add an assets section, like this:
   # assets:
